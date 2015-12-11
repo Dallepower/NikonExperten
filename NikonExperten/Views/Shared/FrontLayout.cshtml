@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/Styles/normalize.css" rel="stylesheet"/>
+    <link href="~/Content/Styles/skeleton.css" rel="stylesheet"/>
+    <link href="~/Content/Styles/StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container" style="margin:0 auto">
+        <div class="row">
+            <div class="twelve columns" style="margin-bottom: -7px">
+                <img src="~/Content/LogoBanner/NIKONexperten.jpg"/>
+            </div>
+        </div>
+        <div class="row menuBackground">
+            <div class="twelve columns menuBackground">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">Forside</a>
+                            <a href="#">Produkter</a>
+                            <a href="#">Om os</a>
+                            <a href="#">Kontakt</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="twelve columns">
+                <img src="~/Content/LogoBanner/Banner01.jpg" />
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+@RenderBody() @*Her kommer dataerne fra de andre sider der er linket til RenderBody.(Denne side)*@
