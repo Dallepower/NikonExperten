@@ -40,7 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Duser\AutoFac.cs" />
+    <Compile Include="Duser\Conn.cs" />
+    <Compile Include="Duser\Mapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -48,6 +50,11 @@
       <Project>{ba5bb174-5be5-42ff-b508-142e4fd68e41}</Project>
       <Name>NikonExperten</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Factories\" />
+    <Folder Include="Models\BaseModels\" />
+    <Folder Include="Models\ViewModels\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
