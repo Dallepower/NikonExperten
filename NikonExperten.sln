@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NikonExperten", "NikonExperten\NikonExperten.csproj", "{BA5BB174-5BE5-42FF-B508-142E4FD68E41}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepoNE", "RepoNE\RepoNE.csproj", "{DDB55B61-FDA4-4011-927A-EECB9EF64870}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{BA5BB174-5BE5-42FF-B508-142E4FD68E41}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA5BB174-5BE5-42FF-B508-142E4FD68E41}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA5BB174-5BE5-42FF-B508-142E4FD68E41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDB55B61-FDA4-4011-927A-EECB9EF64870}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDB55B61-FDA4-4011-927A-EECB9EF64870}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDB55B61-FDA4-4011-927A-EECB9EF64870}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDB55B61-FDA4-4011-927A-EECB9EF64870}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
