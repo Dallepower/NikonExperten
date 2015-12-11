@@ -91,6 +91,7 @@
   <ItemGroup>
     <Content Include="Content\Styles\normalize.css" />
     <Content Include="Content\Styles\skeleton.css" />
+    <Content Include="Content\Styles\StyleSheet.css" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
