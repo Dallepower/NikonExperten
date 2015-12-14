@@ -1,22 +1,22 @@
 ﻿using System.Web.Mvc;
 
-namespace NikonExperten.Areas.Admin
+namespace NikonExperten.Areas.CMS
 {
-    public class AdminAreaRegistration : AreaRegistration 
+    public class CMSAreaRegistration : AreaRegistration 
     {
         public override string AreaName 
         {
             get 
             {
-                return "Admin";
+                return "CMS";
             }
         }
 
         public override void RegisterArea(AreaRegistrationContext context) 
         {
             context.MapRoute(
-                "Admin_default",
-                "Admin/{controller}/{action}/{id}",
+                "CMS_default",
+                "CMS/{controller}/{action}/{id}",
                 new { action = "Index", id = UrlParameter.Optional }
             );
         }
