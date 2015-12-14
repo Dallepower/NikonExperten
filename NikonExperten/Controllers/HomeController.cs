@@ -13,5 +13,15 @@ namespace NikonExperten.Controllers
         {
             return View();
         }
+
+        public ActionResult Omos()
+        {
+            return View();
+        }
+
+        public ActionResult Kontakt()
+        {
+            return View();
+        }
     }
 }

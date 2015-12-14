@@ -10,3 +10,20 @@ body {
 .menuBackground {
     background-color: #e0d4be;
 }
+
+.height100 {
+    height: 100px;
+    width: 100px;
+}
+
+.white {
+    background-color: white;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.marginbund7 {
+    margin-bottom: -7px;
+}

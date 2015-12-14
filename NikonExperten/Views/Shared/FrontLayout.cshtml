@@ -9,9 +9,9 @@
     <link href="~/Content/Styles/StyleSheet.css" rel="stylesheet" />
 </head>
 <body>
-    <div class="container" style="margin:0 auto">
+    <div class="container center">
         <div class="row">
-            <div class="twelve columns" style="margin-bottom: -7px">
+            <div class="twelve columns marginbund7">
                 <img src="~/Content/LogoBanner/NIKONexperten.jpg" />
             </div>
         </div>
@@ -20,77 +20,23 @@
                 <nav>
                     <ul>
                         <li>
-                            <a href="#">Forside</a>
-                            <a href="#">Produkter</a>
-                            <a href="#">Om os</a>
-                            <a href="#">Kontakt</a>
+                            <a href="~/Home/Index/">Forside</a>
+                            <a href="~/Produkt/Produkter/">Produkter</a>
+                            <a href="~/Home/Omos/">Om os</a>
+                            <a href="~/Home/Kontakt/">Kontakt</a>
                         </li>
                     </ul>
                 </nav>
             </div>
         </div>
         <div class="row">
-            <div class="twelve columns">
+            <div class="twelve columns marginbund7">
                 <img src="~/Content/LogoBanner/Banner01.jpg" />
             </div>
         </div>
         <div class="row">
-            <div class="twelve columns" style="background-color: white;">
-                <table class="three columns">
-                    <tr>
-                        <td>
-                            <img src="~/Content/Produkter/nikon_d300_1.jpg" class="u-max-full-width" />
-                        </td>
-                    </tr>
-                    <tr style="background-color: black;">
-                        <td>
-                            <h4 style="color: #f9b13b;">DSLR kamera</h4>
-                            <p>I denne produktkategori finder du de nyeste NIKON DSLR kameraer.</p>
-                        </td>
-                    </tr>
-                </table>
-
-                <table class="three columns">
-                    <tr>
-                        <td>
-                            <img src="~/Content/Produkter/nikon_d300_1.jpg" class="u-max-full-width" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h4 style="color: #f9b13b;">DSLR kamera</h4>
-                            <p>I denne produktkategori finder du de nyeste NIKON DSLR kameraer.</p>
-                        </td>
-                    </tr>
-                </table>
-
-                <table class="three columns">
-                    <tr>
-                        <td>
-                            <img src="~/Content/Produkter/nikon_d300_1.jpg" class="u-max-full-width" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h4 style="color: #f9b13b;">DSLR kamera</h4>
-                            <p>I denne produktkategori finder du de nyeste NIKON DSLR kameraer.</p>
-                        </td>
-                    </tr>
-                </table>
-                
-                <table class="three columns">
-                    <tr>
-                        <td>
-                            <img src="~/Content/Produkter/nikon_d300_1.jpg" class="u-max-full-width" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h4 style="color: #f9b13b;">DSLR kamera</h4>
-                            <p style="color:white">I denne produktkategori finder du de nyeste NIKON DSLR kameraer.</p>
-                        </td>
-                    </tr>
-                </table>
+            <div class="twelve columns white">
+                @RenderBody() @*Her kommer dataerne fra de andre sider der er linket til RenderBody.(Denne side)*@
             </div>
         </div>
     </div>
@@ -98,4 +44,3 @@
 </html>
 
 
-@RenderBody() @*Her kommer dataerne fra de andre sider der er linket til RenderBody.(Denne side)*@
