@@ -31,6 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -44,12 +45,6 @@
     <Compile Include="Duser\Conn.cs" />
     <Compile Include="Duser\Mapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\NikonExperten\NikonExperten.csproj">
-      <Project>{ba5bb174-5be5-42ff-b508-142e4fd68e41}</Project>
-      <Name>NikonExperten</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Factories\" />
