@@ -179,6 +179,12 @@
     <Folder Include="Areas\CMS\Views\Kategori\" />
     <Folder Include="Models\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RepoNE\RepoNE.csproj">
+      <Project>{ddb55b61-fda4-4011-927a-eecb9ef64870}</Project>
+      <Name>RepoNE</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

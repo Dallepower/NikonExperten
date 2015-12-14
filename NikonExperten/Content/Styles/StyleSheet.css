@@ -21,9 +21,61 @@ body {
 }
 
 .center {
-    margin: 0 auto;
+    margin: 0 auto 0 auto;
 }
 
 .marginbund7 {
     margin-bottom: -7px;
+}
+
+.OrangeOverskrift {
+    color: #f9b13b;
+}
+
+.HvidTekst {
+    color: white;
+}
+
+.SortBaggrund {
+    background-color: black;
+}
+
+.OrangeBorder {
+    border: #f9b13b 1px solid;
+}
+
+/*40px margin bund*/
+
+.marginbund40 {
+    margin-bottom: 40px;
+}
+
+/* Billede størrelse + margin-top*/
+
+.sizemarginpic {
+    margin-top: 20px;
+    width: 150px;
+    height: 150px;
+}
+
+/* Menuen :*/
+
+nav {
+    
+}
+
+ul {
+    display: inline;
+    list-style: none;
+}
+
+ul li {
+    list-style: none;
+    display: inline;
+}
+
+ul li a {
+    color: #5f5e5a;
+    text-decoration: none;
+    font-size:20px
 }
