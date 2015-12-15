@@ -7,20 +7,20 @@
     Layout = "~/Views/Shared/FrontLayout.cshtml";
 }
 
-<h5>@Model.Kategori.Navn</h5>
+@*<h5>@Model.Kategori.Navn</h5>*@
 
 <div class="three columns" style="border: 2px solid orange;">
     <table>
         <tr>
             <td>
-                <form name="myForm" action="/Produkt/Produkter/" enctype="multipart/form-data" method="post">
+                @*<form name="myForm" action="/Produkt/Produkter/" enctype="multipart/form-data" method="post">
                     <select name="KatID">
                         @foreach (Produkt p in Model.Produkter)
                         {
                             <option value="@p.ID">@p.Navn</option>
                         }
                     </select>
-                </form>
+                </form>*@
             </td>
         </tr>
         <tr>
