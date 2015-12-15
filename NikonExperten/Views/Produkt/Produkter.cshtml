@@ -3,7 +3,7 @@
 @model ProduktListe
 
 @{
-    ViewBag.Title = "ProduktListe";
+    ViewBag.Title = "Produkter";
     Layout = "~/Views/Shared/FrontLayout.cshtml";
 }
 
@@ -13,7 +13,7 @@
     <table>
         <tr>
             <td>
-                <form name="myForm" action="/Produkt/ProduktListe/" enctype="multipart/form-data" method="post">
+                <form name="myForm" action="/Produkt/Produkter/" enctype="multipart/form-data" method="post">
                     <select name="KatID">
                         @foreach (Produkt p in Model.Produkter)
                         {
