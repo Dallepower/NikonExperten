@@ -149,12 +149,13 @@
     <Compile Include="Areas\CMS\Controllers\AdminController.cs" />
     <Compile Include="Areas\CMS\Controllers\aKategoriController.cs" />
     <Compile Include="Areas\CMS\Controllers\aProduktController.cs" />
+    <Compile Include="Areas\CMS\Controllers\KategoriController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProduktController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Views\ProduktController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
@@ -163,14 +164,13 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Omos.cshtml" />
     <Content Include="Views\Home\Kontakt.cshtml" />
-    <Content Include="Views\Produkt\Produkter.cshtml" />
     <Content Include="Areas\CMS\Views\web.config" />
     <Content Include="Areas\CMS\Views\Shared\_LayoutPage1.cshtml" />
     <Content Include="Areas\CMS\Views\Admin\Index.cshtml" />
-    <Content Include="Areas\CMS\Views\aKategori\NyKategori.cshtml" />
-    <Content Include="Areas\CMS\Views\aKategori\AddKat.cshtml" />
-    <Content Include="Areas\CMS\Views\aKategori\Edit.cshtml" />
-    <Content Include="Areas\CMS\Views\aKategori\EditForm.cshtml" />
+    <Content Include="Areas\CMS\Views\Kategori\NyKategori.cshtml" />
+    <Content Include="Areas\CMS\Views\Kategori\AddKat.cshtml" />
+    <Content Include="Areas\CMS\Views\Kategori\Edit.cshtml" />
+    <Content Include="Areas\CMS\Views\Kategori\EditForm.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
