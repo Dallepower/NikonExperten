@@ -147,7 +147,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\CMS\CMSAreaRegistration.cs" />
     <Compile Include="Areas\CMS\Controllers\AdminController.cs" />
-    <Compile Include="Areas\CMS\Controllers\KategoriController.cs" />
+    <Compile Include="Areas\CMS\Controllers\aKategoriController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -166,10 +166,10 @@
     <Content Include="Areas\CMS\Views\web.config" />
     <Content Include="Areas\CMS\Views\Shared\_LayoutPage1.cshtml" />
     <Content Include="Areas\CMS\Views\Admin\Index.cshtml" />
-    <Content Include="Areas\CMS\Views\Kategori\NyKategori.cshtml" />
-    <Content Include="Areas\CMS\Views\Kategori\AddKat.cshtml" />
-    <Content Include="Areas\CMS\Views\Kategori\Edit.cshtml" />
-    <Content Include="Areas\CMS\Views\Kategori\EditForm.cshtml" />
+    <Content Include="Areas\CMS\Views\aKategori\NyKategori.cshtml" />
+    <Content Include="Areas\CMS\Views\aKategori\AddKat.cshtml" />
+    <Content Include="Areas\CMS\Views\aKategori\Edit.cshtml" />
+    <Content Include="Areas\CMS\Views\aKategori\EditForm.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

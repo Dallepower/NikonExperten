@@ -7,7 +7,7 @@ using RepoNE;
 
 namespace NikonExperten.Areas.CMS.Controllers
 {
-    public class KategoriController : Controller
+    public class aKategoriController : Controller
     {
         private KategoriFac katFac = new KategoriFac();
         // GET: CMS/Kategori
