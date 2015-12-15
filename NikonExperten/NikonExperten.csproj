@@ -147,8 +147,10 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\CMS\CMSAreaRegistration.cs" />
     <Compile Include="Areas\CMS\Controllers\AdminController.cs" />
+    <Compile Include="Areas\CMS\Controllers\aKategoriController.cs" />
     <Compile Include="Areas\CMS\Controllers\KategoriController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProduktController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
