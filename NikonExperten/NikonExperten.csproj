@@ -148,6 +148,7 @@
     <Compile Include="Areas\CMS\CMSAreaRegistration.cs" />
     <Compile Include="Areas\CMS\Controllers\AdminController.cs" />
     <Compile Include="Areas\CMS\Controllers\aKategoriController.cs" />
+    <Compile Include="Areas\CMS\Controllers\aProduktController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -180,6 +181,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\CMS\Models\" />
+    <Folder Include="Areas\CMS\Views\aProdukt\" />
     <Folder Include="Areas\CMS\Views\Home\" />
     <Folder Include="Models\" />
   </ItemGroup>

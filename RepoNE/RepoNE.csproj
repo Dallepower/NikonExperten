@@ -45,7 +45,9 @@
     <Compile Include="Duser\Conn.cs" />
     <Compile Include="Duser\Mapper.cs" />
     <Compile Include="Factories\KategoriFac.cs" />
+    <Compile Include="Factories\ProduktFac.cs" />
     <Compile Include="Models\BaseModels\Kategori.cs" />
+    <Compile Include="Models\BaseModels\Produkt.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
