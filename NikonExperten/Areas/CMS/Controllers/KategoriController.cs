@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using RepoNE;
-using RepoNE.Models.BaseModels;
+
 namespace NikonExperten.Areas.CMS.Controllers
 {
     public class KategoriController : Controller

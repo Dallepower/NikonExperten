@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using RepoNE.Models.BaseModels;
+using RepoNE;
 namespace RepoNE
 {
     public class KategoriFac : AutoFac<Kategori>
