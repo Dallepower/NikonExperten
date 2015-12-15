@@ -93,6 +93,7 @@
     <Content Include="Areas\CMS\css\skeleton.css" />
     <Content Include="Areas\CMS\css\styles.css" />
     <Content Include="Areas\CMS\css\StyleSheetAdmin.css" />
+    <Content Include="Areas\CMS\script.js" />
     <Content Include="Content\LogoBanner\Banner01.jpg" />
     <Content Include="Content\LogoBanner\Banner02.jpg" />
     <Content Include="Content\LogoBanner\Banner03.jpg" />
@@ -112,7 +113,6 @@
     <Content Include="Content\Produkter\D5200.jpg" />
     <Content Include="Content\Produkter\D600.jpg" />
     <Content Include="Content\Produkter\D7100.jpg" />
-    <Content Include="Content\Produkter\info.png" />
     <Content Include="Content\Produkter\Kamera.jpg" />
     <Content Include="Content\Produkter\Kompakt.png" />
     <Content Include="Content\Produkter\Kort.jpg" />
@@ -149,7 +149,6 @@
     <Compile Include="Areas\CMS\Controllers\AdminController.cs" />
     <Compile Include="Areas\CMS\Controllers\KategoriController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\ProduktController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -165,7 +164,10 @@
     <Content Include="Areas\CMS\Views\web.config" />
     <Content Include="Areas\CMS\Views\Shared\_LayoutPage1.cshtml" />
     <Content Include="Areas\CMS\Views\Admin\Index.cshtml" />
-    <Content Include="Views\Produkt\ProduktListe.cshtml" />
+    <Content Include="Areas\CMS\Views\Kategori\NyKategori.cshtml" />
+    <Content Include="Areas\CMS\Views\Kategori\AddKat.cshtml" />
+    <Content Include="Areas\CMS\Views\Kategori\Edit.cshtml" />
+    <Content Include="Areas\CMS\Views\Kategori\EditForm.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -177,7 +179,6 @@
     <Folder Include="App_Data\" />
     <Folder Include="Areas\CMS\Models\" />
     <Folder Include="Areas\CMS\Views\Home\" />
-    <Folder Include="Areas\CMS\Views\Kategori\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
