@@ -11,6 +11,13 @@ body {
     background-color: #e0d4be;
 }
 
+.menuBorder {
+    border-top: 1px solid #f9b13b;
+    margin-top: 3px;
+    border-bottom: 1px solid #f9b13b;
+    margin-bottom: 3px;
+}
+
 .height100 {
     height: 100px;
     width: 100px;
@@ -61,7 +68,7 @@ body {
 /* Menuen :*/
 
 nav {
-    
+    text-align: center;
 }
 
 ul {
@@ -69,13 +76,30 @@ ul {
     list-style: none;
 }
 
-ul li {
-    list-style: none;
-    display: inline;
+    ul li {
+        list-style: none;
+        display: inline;
+    }
+
+        ul li a {
+            color: #5f5e5a;
+            text-decoration: none;
+            font-size: 20px;
+            padding-left: 40px;
+        }
+
+footer {
+    background-color: #e0d4be;
 }
 
-ul li a {
-    color: #5f5e5a;
-    text-decoration: none;
-    font-size:20px
+.footerBorder {
+    border-top: 1px solid #f9b13b;
+    margin-top: 3px;
+    border-bottom: 1px solid #f9b13b;
+    margin-bottom: 3px;
+}
+
+
+.paddingleft20px {
+    padding-left: 20px;
 }
