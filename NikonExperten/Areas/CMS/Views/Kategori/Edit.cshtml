@@ -1,0 +1,22 @@
+﻿@using RepoNE
+@using RepoNE.Models.BaseModels
+@model List<Kategori>
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Areas/CMS/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<h2>Edit</h2>
+
+<ul>
+
+    @foreach (Kategori kat in Model)
+    {
+        <li>
+            @kat.Navn <a href="/CMS/Kategori/EditForm/@kat.ID/">Rediger</a>
+            <a href="/CMS/Kategori/Delete/@kat.ID/">Slet</a>
+        </li>
+
+    }
+
+</ul>

@@ -93,6 +93,7 @@
     <Content Include="Areas\CMS\css\skeleton.css" />
     <Content Include="Areas\CMS\css\styles.css" />
     <Content Include="Areas\CMS\css\StyleSheetAdmin.css" />
+    <Content Include="Areas\CMS\script.js" />
     <Content Include="Content\LogoBanner\Banner01.jpg" />
     <Content Include="Content\LogoBanner\Banner02.jpg" />
     <Content Include="Content\LogoBanner\Banner03.jpg" />
@@ -165,6 +166,10 @@
     <Content Include="Areas\CMS\Views\web.config" />
     <Content Include="Areas\CMS\Views\Shared\_LayoutPage1.cshtml" />
     <Content Include="Areas\CMS\Views\Admin\Index.cshtml" />
+    <Content Include="Areas\CMS\Views\Kategori\NyKategori.cshtml" />
+    <Content Include="Areas\CMS\Views\Kategori\AddKat.cshtml" />
+    <Content Include="Areas\CMS\Views\Kategori\Edit.cshtml" />
+    <Content Include="Areas\CMS\Views\Kategori\EditForm.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -176,7 +181,6 @@
     <Folder Include="App_Data\" />
     <Folder Include="Areas\CMS\Models\" />
     <Folder Include="Areas\CMS\Views\Home\" />
-    <Folder Include="Areas\CMS\Views\Kategori\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
