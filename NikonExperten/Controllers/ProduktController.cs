@@ -14,7 +14,7 @@ namespace NikonExperten.Controllers
         // GET: Produkt
         public ActionResult ProduktListe(int id=1)
         {
-            return View(prodFac.GetProduktListe(id));
+            return View();
         }
 
     }
