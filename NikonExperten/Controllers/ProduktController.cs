@@ -12,7 +12,7 @@ namespace NikonExperten.Controllers
         ProduktFac prodFac = new ProduktFac();
 
         // GET: Produkt
-        public ActionResult ProduktListe(int id=1)
+        public ActionResult Produkter()
         {
             return View();
         }
