@@ -8,7 +8,8 @@ namespace RepoNE
 {
     public class ProduktListe
     {
-        public List<Kategori> Kategori { get; set; }
+        public List<Kategori> KategoriList { get; set; }
+        public Kategori Kategori { get; set; }
         public List<Produkt> Produkter { get; set; }
     }
 }

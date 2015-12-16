@@ -12,7 +12,7 @@ namespace RepoNE
         public ProduktListe GetProduktListe(int katID)
         {
             ProduktListe pl = new ProduktListe();
-            pl.Kategori = katFac.GetAll();
+            pl.KategoriList = katFac.GetAll();
             pl.Produkter = GetBy("KatID", katID);
             return pl;
         }
