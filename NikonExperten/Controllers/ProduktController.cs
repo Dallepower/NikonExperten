@@ -17,5 +17,10 @@ namespace NikonExperten.Controllers
             return View();
         }
 
+        public ActionResult KategoriVisning(int id=1)
+        {
+            return View(prodFac.GetProduktListe(id));
+        }
+
     }
 }

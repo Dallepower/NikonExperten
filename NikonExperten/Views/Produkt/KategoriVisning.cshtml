@@ -1,0 +1,66 @@
+﻿@using System.Diagnostics.Eventing.Reader
+@using RepoNE
+@model ProduktListe
+@{
+    ViewBag.Title = "KategoriVisning";
+    Layout = "~/Views/Shared/FrontLayout.cshtml";
+}
+
+<h2></h2>
+<div class="container">
+
+    <div class="two columns" style="border: 2px solid black;">
+        <table>
+            <tr>
+                <td>
+                    Søgning
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Indhold
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="ten columns">
+        <table style="border-spacing: 10px ; border-collapse: separate;">
+    @{
+        int count = 0;
+    }
+
+    @foreach (var kategori in Model.Kategori)
+            {
+
+
+                count++;
+
+                if (count == 4)
+                {
+            <td class="KatVis">
+                <img src="~/Content/Kategorier/Statov.png" class="ImgSize" />
+                <div style="background-color: black; padding-bottom: 5px">
+                    <span class="KatTekst">@kategori.Navn</span>
+                </div>
+            </td>
+
+            @:</tr><tr>
+
+                    count = 0;
+
+
+                }
+        else
+        {
+            <td class="KatVis">
+                <img src="~/Content/Kategorier/Statov.png" class="ImgSize" />
+                <div style="background-color: black; padding-bottom: 5px">
+                    <span class="KatTekst">@kategori.Navn</span>
+                </div>
+            </td>
+        }
+
+    }
+            </table>
+            </div>
+        </div>

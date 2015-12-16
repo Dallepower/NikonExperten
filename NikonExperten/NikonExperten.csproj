@@ -94,6 +94,14 @@
     <Content Include="Areas\CMS\css\styles.css" />
     <Content Include="Areas\CMS\css\StyleSheetAdmin.css" />
     <Content Include="Areas\CMS\script.js" />
+    <Content Include="Content\Kategorier\Bateri.jpg" />
+    <Content Include="Content\Kategorier\blitz.png" />
+    <Content Include="Content\Kategorier\Kamera.jpg" />
+    <Content Include="Content\Kategorier\Kompakt.png" />
+    <Content Include="Content\Kategorier\Kort.jpg" />
+    <Content Include="Content\Kategorier\Objektiv.jpg" />
+    <Content Include="Content\Kategorier\Statov.png" />
+    <Content Include="Content\Kategorier\Tilbud.gif" />
     <Content Include="Content\LogoBanner\Banner01.jpg" />
     <Content Include="Content\LogoBanner\Banner02.jpg" />
     <Content Include="Content\LogoBanner\Banner03.jpg" />
@@ -166,12 +174,12 @@
     <Content Include="Areas\CMS\Views\web.config" />
     <Content Include="Areas\CMS\Views\Shared\_LayoutPage1.cshtml" />
     <Content Include="Areas\CMS\Views\Admin\Index.cshtml" />
-    <Content Include="Views\Produkt\ProduktListe.cshtml" />
     <Content Include="Views\Produkt\Produkter.cshtml" />
     <Content Include="Areas\CMS\Views\aKategori\AddKat.cshtml" />
     <Content Include="Areas\CMS\Views\aKategori\Edit.cshtml" />
     <Content Include="Areas\CMS\Views\aKategori\EditForm.cshtml" />
     <Content Include="Areas\CMS\Views\aKategori\NyKategori.cshtml" />
+    <Content Include="Views\Produkt\KategoriVisning.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
