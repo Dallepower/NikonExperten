@@ -5,15 +5,15 @@ using System.Web;
 using System.Web.Mvc;
 using RepoNE;
 using System.IO;
-
+using RepoNE.Models.ViewModels;
 namespace NikonExperten.Areas.CMS.Controllers
 {
     public class aProduktController : Controller
     {
         Uploader u = new Uploader();
         KategoriFac kf = new KategoriFac();
-        private ProduktFac pf = new ProduktFac();
-        // GET: CMS/aProdukt
+        ProduktFac pf = new ProduktFac();
+        
         public ActionResult Add()
         {
             return View(kf.GetAll());
@@ -33,6 +33,25 @@ namespace NikonExperten.Areas.CMS.Controllers
             pf.Insert(prod);
             ViewBag.MSG = "Produktet er oprettet!";
             return View("Add", kf.GetAll());
+        }
+
+        public ActionResult Edit()
+        {
+            EditProduct ep = new EditProduct();
+            ep.Kategorier = kf.GetAll();
+            return View(ep);
+        }
+
+        public ActionResult EditList(int KatID)
+        {
+            EditProduct ep = new EditProduct();
+            ProduktListe pl = new ProduktListe();
+            ep.Kategorier = kf.GetAll();
+            pl.Produkter = pf.GetBy("KatID", KatID);
+            pl.Kategori = kf.Get(KatID);
+            ep.Produktliste = pl; 
+
+            return View("Edit", ep);
         }
     }
 }
