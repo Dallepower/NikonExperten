@@ -145,6 +145,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\CMS\aHelpers\Uploader.cs" />
     <Compile Include="Areas\CMS\CMSAreaRegistration.cs" />
     <Compile Include="Areas\CMS\Controllers\AdminController.cs" />
     <Compile Include="Areas\CMS\Controllers\aKategoriController.cs" />
@@ -166,12 +167,12 @@
     <Content Include="Areas\CMS\Views\web.config" />
     <Content Include="Areas\CMS\Views\Shared\_LayoutPage1.cshtml" />
     <Content Include="Areas\CMS\Views\Admin\Index.cshtml" />
-    <Content Include="Views\Produkt\ProduktListe.cshtml" />
     <Content Include="Views\Produkt\Produkter.cshtml" />
     <Content Include="Areas\CMS\Views\aKategori\AddKat.cshtml" />
     <Content Include="Areas\CMS\Views\aKategori\Edit.cshtml" />
     <Content Include="Areas\CMS\Views\aKategori\EditForm.cshtml" />
     <Content Include="Areas\CMS\Views\aKategori\NyKategori.cshtml" />
+    <Content Include="Areas\CMS\Views\aProdukt\Add.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -182,8 +183,8 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\CMS\Models\" />
-    <Folder Include="Areas\CMS\Views\aProdukt\" />
     <Folder Include="Areas\CMS\Views\Home\" />
+    <Folder Include="Content\images\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>

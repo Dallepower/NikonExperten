@@ -16,7 +16,7 @@ namespace RepoNE
 
         public int Pris { get; set; }
 
-        public int Tilbudspris { get; set; }
+        public int Tildbudspris { get; set; }
 
         public string Leveringstid { get; set; }
 

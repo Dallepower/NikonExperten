@@ -1,0 +1,99 @@
+﻿@using RepoNE
+@model List<Kategori>
+
+@{
+    ViewBag.Title = "Add";
+    Layout = "~/Areas/CMS/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<h2>Add</h2>
+
+<form name="myForm" action="/CMS/aProdukt/AddResult/" enctype="multipart/form-data" method="post">
+
+    Kategori:
+    <select name="KatID">
+        @foreach (Kategori k in Model)
+        {
+            <option value="@k.ID">@k.Navn</option>
+
+        }
+    </select>
+
+    <table>
+        <tr>
+            <td>Navn:</td>
+            <td>
+                <input id="Text1" type="text" name="Navn" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Producent: 
+            </td>
+            <td>
+                <input id="Text1" type="text" name="Producent" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Pris:
+            </td>
+            <td>
+               <input id="Text1" type="text" name="Pris" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Tilbudspris:
+            </td>
+            <td>
+                <input id="Text1" type="text" name="Tildbudspris" /> (forbliver tom hvis der ikke er tilbud)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Varenummer:
+            </td>
+            <td>
+                 <input id="Text1" type="text" name="Varenummer" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Lagerantal: 
+            </td>
+            <td>
+                <input id="Text1" type="text" name="Lagerantal" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Leveringstid:
+            </td>
+            <td>
+                <input id="Text1" type="text" name="Leveringstid" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Produktbeskrivelse:
+            </td>
+            <td>
+                <textarea id="TextArea1" rows="2" cols="20" name="Beskrivelse"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input id="File1" type="file" name="Fil" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input id="Submit1" type="submit" value="Gem" />@ViewBag.MSG
+            </td>
+        </tr>
+    </table>
+
+    
+
+</form>
