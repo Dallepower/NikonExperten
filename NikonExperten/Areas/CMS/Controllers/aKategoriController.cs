@@ -21,8 +21,9 @@ namespace NikonExperten.Areas.CMS.Controllers
             return View();
         }
 
-        public ActionResult AddKat(Kategori kat)
+        public ActionResult AddKat(Kategori kat, HttpPostedFileBase fil)
         {
+
             if (ModelState.IsValid)
             {
                 katFac.Insert(kat);

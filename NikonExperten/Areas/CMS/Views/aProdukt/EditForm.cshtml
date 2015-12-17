@@ -1,0 +1,77 @@
+﻿@using RepoNE
+@model RepoNE.Models.ViewModels.EditProduktForm
+
+@{
+    ViewBag.Title = "EditForm";
+    Layout = "~/Areas/CMS/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<h2>EditForm</h2>
+
+<form name="myForm" action="/CMS/aProdukt/EditResult/" enctype="multipart/form-data" method="post">
+    Kategori:
+    <select name="KatID">
+        @foreach (Kategori k in Model.Kategorier)
+        {
+            if (k.ID == Model.Produkt.KatID)
+            {
+                <option value="@k.ID" selected="selected">@k.Navn</option>
+            }
+            else
+            {
+                <option value="@k.ID">@k.Navn</option>
+            }
+        }
+    </select>
+    <table>
+        <tr>
+            <td>Navn</td>
+            <td><input id="Navn" type="text" name="Navn" value="@Model.Produkt.Navn" /></td>
+        </tr>
+        <tr>
+            <td>Producent</td>
+            <td><input id="Producent" type="text" name="Producent" value="@Model.Produkt.Producent" /></td>
+        </tr>
+        <tr>
+            <td>Pris</td>
+            <td><input id="Pris" type="text" name="Pris" value="@Model.Produkt.Pris" /></td>
+        </tr>
+        <tr>
+            <td>Tilbudspris</td>
+            <td><input id="Tilbudspris" type="text" name="Tilbudspris" value="@Model.Produkt.Tildbudspris" /></td>
+        </tr>
+        <tr>
+            <td>Varenummer</td>
+            <td><input id="Varenummer" type="text" name="Varenummer" value="@Model.Produkt.Varenummer" /></td>
+        </tr>
+        <tr>
+            <td>Lagerantal</td>
+            <td><input id="Lagerantal" type="text" name="Lagerantal" value="@Model.Produkt.Lagerantal" /></td>
+        </tr>
+        <tr>
+            <td>Leveringstid</td>
+            <td><input id="Leveringstid" type="text" name="Leveringstid" value="@Model.Produkt.Leveringstid" /></td>
+        </tr>
+        <tr>
+            <td>Tekst</td>
+            <td><textarea id="Tekst" rows="2" cols="20" name="Beskrivelse">@Model.Produkt.Beskrivelse</textarea></td>
+        </tr>
+        <tr>
+            <td><img src="/Content/Images/@Model.Produkt.Billede" /></td>
+            
+        </tr>
+        <tr>
+            <td><input id="fil" type="file" name="fil" /></td>
+            
+        </tr>
+        <tr>
+            <td><input id="Submit1" type="submit" value="Opdater" /></td>
+            
+        </tr>
+    </table>
+   
+    
+    @ViewBag.MSG
+    <input id="ID" type="hidden" name="ID" value="@Model.Produkt.ID" />
+    <input id="Billede" type="hidden" name="Billede" value="@Model.Produkt.Billede" />
+</form>

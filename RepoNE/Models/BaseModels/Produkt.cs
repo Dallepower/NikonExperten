@@ -14,7 +14,7 @@ namespace RepoNE
 
         public string Varenummer { get; set; }
 
-        public int Pris { get; set; }
+        public decimal Pris { get; set; }
 
         public int Tildbudspris { get; set; }
 

@@ -53,5 +53,44 @@ namespace NikonExperten.Areas.CMS.Controllers
 
             return View("Edit", ep);
         }
+
+        public ActionResult EditForm(int id)
+        {
+            EditProduktForm epf = new EditProduktForm();
+            epf.Kategorier = kf.GetAll();
+            epf.Produkt = pf.Get(id);
+            return View(epf);
+        }
+
+        [HttpPost]
+        public ActionResult EditResult(Produkt prod, HttpPostedFileBase fil)
+        {
+            if (fil != null)
+            {
+                string path = Request.PhysicalApplicationPath + "Content/images/";
+                prod.Billede = Path.GetFileName(u.UploadImage(fil, path, 300, true));
+            }
+            else
+            {
+                prod.Billede = "På vej.jpg";
+            }
+
+            pf.Update(prod);
+
+
+            EditProduktForm epf = new EditProduktForm();
+            epf.Kategorier = kf.GetAll();
+            epf.Produkt = pf.Get(prod.ID);
+            ViewBag.MSG = "Produktet er opdateret'!";
+
+            return View("EditForm", epf);
+        }
+
+        public ActionResult Delete(int id)
+        {
+            pf.Delete(id);
+            return RedirectToAction("Edit");
+        }
+
     }
 }

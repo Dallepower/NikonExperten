@@ -16,6 +16,8 @@ namespace RepoNE
         [Range(0, 9999)]
         public int Sortering { get; set; }
 
+        public string Billede { get; set; }
+
     }
 
 }

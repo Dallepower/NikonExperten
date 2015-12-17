@@ -182,6 +182,8 @@
     <Content Include="Areas\CMS\Views\aKategori\NyKategori.cshtml" />
     <Content Include="Areas\CMS\Views\aProdukt\Add.cshtml" />
     <Content Include="Views\Produkt\KategoriVisning.cshtml" />
+    <Content Include="Areas\CMS\Views\aProdukt\Edit.cshtml" />
+    <Content Include="Areas\CMS\Views\aProdukt\EditForm.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
