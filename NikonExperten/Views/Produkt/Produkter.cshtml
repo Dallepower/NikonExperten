@@ -1,4 +1,5 @@
-﻿@using RepoNE
+﻿@using System.Diagnostics.Eventing.Reader
+@using RepoNE
 
 @model ProduktListe
 
@@ -9,18 +10,21 @@
 
 @*<h5>@Model.Kategori.Navn</h5>*@
 
-<div class="three columns" style="border: 2px solid orange;">
+<div class="three columns" style="border: 2px solid orange; margin-left: 30px;">
     <table>
         <tr>
             <td>
-                @*<form name="myForm" action="/Produkt/Produkter/" enctype="multipart/form-data" method="post">
-                    <select name="KatID">
-                        @foreach (Produkt p in Model.Produkter)
-                        {
-                            <option value="@p.ID">@p.Navn</option>
-                        }
-                    </select>
-                </form>*@
+                @if (Model != null)
+                {
+                    <form name="myForm" action="/Produkt/Produkter/" enctype="multipart/form-data" method="post">
+                        <select name="KatID">
+                            @foreach (var p in Model.Produkter)
+                            {
+                                <option value="@p.ID">@p.Navn</option>
+                            }
+                        </select>
+                    </form>
+                }
             </td>
         </tr>
         <tr>
@@ -35,49 +39,55 @@
     </table>
 </div>
 
-<div class="eight columns" style="border: 2px solid orange; height: 115px; margin-bottom: 35px;">
-    <table>
-        <tr>
-            <td style="padding-left: 15px">
-                <img src="~/Content/Produkter/Kamera.jpg" style="width: 100px; height: 100px;"/>
-            </td>
-            <td style="padding-left: 25px;">
-                Varenummer:
-                <br/>
-                Pris:
-                <br/>
-                Leveringstid:
-            </td>
-            <td style="padding-left: 10px;">
-                345
-                <br/>
-                3.199.00 kr.
-                <br/>
-                2-3 dage
-            </td>
-            <td style="padding-left: 10px;">
-                Producent
-                <br/>
-                @*Nu kun:*@
-                <br/>
-                test
-            </td>
-            <td style="padding-left: 10px;">
-                NIKON
-                <br/>
-                @*eventuelt tilbuds pris her*@
-                <br/>
-                2 stk.
-            </td>
-            <td style="padding-left: 80px;">
-                <img src="~/Content/Produkter/info.png" style="height: 50px; width: 50px;"/>
-                <br/>
-                <a href="#">[Se mere]</a>
+@foreach (var produkt in Model.Produkter)
+{
+    <div class="eight columns" style="border: 2px solid orange; height: 115px; margin-bottom: 35px; margin-right: 30px; float: right;">
+        <table>
+            <tr>
+                <td style="padding-left: 15px">
+                    <img src="~/Content/Produkter/@produkt.Billede" style="width: 100px; height: 100px;" />
+                </td>
+                <td style="padding-left: 25px;">
+                    Varenummer:
+                    <br />
+                    Pris:
+                    <br />
+                    Leveringstid:
+                </td>
+                <td style="padding-left: 10px;">
+                    @produkt.Varenummer
+                    <br />
+                    @produkt.Pris
+                    <br />
+                    @produkt.Leveringstid
+                </td>
+                <td style="padding-left: 10px;">
+                    Producent
+                    <br />
+                    Tilbud:
+                    <br />
+                    Lager antal:
+                </td>
+                <td style="padding-left: 10px;">
+                    @produkt.Producent
+                    <br />
+                    @produkt.Tildbudspris
+                    <br />
+                    @produkt.Lagerantal
+                </td>
+                <td style="padding-left: 80px;">
+                    <img src="~/Content/Produkter/info.png" style="height: 50px; width: 50px;" />
+                    <br />
+                    <a href="#">[Se mere]</a>
 
 
 
-            </td>
-        </tr>
-    </table>
-</div>
+                </td>
+            </tr>
+        </table>
+    </div>
+}
+
+
+
 
