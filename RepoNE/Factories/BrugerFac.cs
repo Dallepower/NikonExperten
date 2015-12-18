@@ -1,13 +1,14 @@
-using System;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using RepoNE;
 using System.Data.SqlClient;
-
 namespace RepoNE
 {
-
-
     public class BrugerFac : AutoFac<Bruger>
     {
-
         Mapper<Bruger> mapper = new Mapper<Bruger>();
         public Bruger Login(string email, string password)
         {
@@ -22,9 +23,9 @@ namespace RepoNE
 
                 if (r.Read())
                 {
-                   per = mapper.Map(r); 
+                    per = mapper.Map(r);
                 }
-                
+
                 r.Close();
                 CMD.Connection.Close();
 
@@ -32,28 +33,5 @@ namespace RepoNE
 
             }
         }
-
-        public bool UserExists(string email)
-        {
-            using (var cmd = new SqlCommand("SELECT ID FROM Bruger WHERE Email=@Email", Conn.CreateConnection()))
-            {
-                cmd.Parameters.AddWithValue("@Email", email);
-
-                var r = cmd.ExecuteReader();
-
-                if (r.Read())
-                {
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
-            }
-
-        }
-
-
     }
-
 }

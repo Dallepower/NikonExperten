@@ -158,6 +158,7 @@
     <Compile Include="Areas\CMS\Controllers\AdminController.cs" />
     <Compile Include="Areas\CMS\Controllers\aKategoriController.cs" />
     <Compile Include="Areas\CMS\Controllers\aProduktController.cs" />
+    <Compile Include="Areas\CMS\Controllers\BrugerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProduktController.cs" />
     <Compile Include="Global.asax.cs">
@@ -184,6 +185,8 @@
     <Content Include="Views\Produkt\KategoriVisning.cshtml" />
     <Content Include="Areas\CMS\Views\aProdukt\Edit.cshtml" />
     <Content Include="Areas\CMS\Views\aProdukt\EditForm.cshtml" />
+    <Content Include="Areas\CMS\Views\Bruger\Secret.cshtml" />
+    <Content Include="Areas\CMS\Views\Bruger\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

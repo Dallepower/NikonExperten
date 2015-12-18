@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/CMS/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<h2>Index</h2>
+
+<form name="myForm" action="/CMS/Bruger/Login/" enctype="multipart/form-data" method="post">
+    <input id="Navn" type="text" name="Navn" />
+    <br />
+    <input id="Adgangskode" type="text" name="Adgangskode" />
+    <br />
+    <input id="Submit1" type="submit" value="Log-in" />
+    @ViewBag.MSG
+    @Crypto.Hash("admin")
