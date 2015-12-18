@@ -8,11 +8,22 @@
 <h2>EditForm</h2>
 
 <form name="myForm" action="/CMS/aKategori/EditResult/" enctype="multipart/form-data" method="post">
-    Navn:<input id="Navn" type="text" name="Navn" value="@Model.Navn" />
-    <br />
-    Sortering:<input id="Navn" type="text" name="Sortering" value="@Model.Sortering" />
-    <br />
-    <input id="Submit1" type="submit" name="Sortering" value="Gem ændringer" />
+    <table>
+        <tr>
+            <td>Navn:</td>
+            <td><input id="Navn" type="text" name="Navn" value="@Model.Navn" /></td>
+        </tr>
+        <tr>
+            <td>Sortering:</td>
+            <td><input id="Navn" type="text" name="Sortering" value="@Model.Sortering" /></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input id="Submit1" type="submit" name="Sortering" value="Gem ændringer" /></td>
+        </tr>
+    </table>
+
+    
     @ViewBag.MSG<input id="Hidden1" type="hidden" name="ID" value="@Model.ID" />
 
 </form>

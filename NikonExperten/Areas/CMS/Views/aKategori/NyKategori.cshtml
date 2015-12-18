@@ -7,13 +7,25 @@
 <h2>NyKategori</h2>
 
 <form name="myForm" action="/CMS/aKategori/AddKat/" enctype="multipart/form-data" method="post">
-    Navn:<input id="Navn" type="text" name="Navn" />
-    <br />
-    Sortering:<input id="Sortering" type="text" name="Sortering" />
-    <br />
-    @*<input id="File1" type="file" name="Billede" />*@
-    @*<br />*@
-    <input id="Submit1" type="submit" value="Opret" />
-    @ViewBag.MSG
+
+    <table>
+        <tr>
+            <td>Navn:</td>
+            <td><input id="Navn" type="text" name="Navn" /></td>
+        </tr>
+        <tr>
+            <td>Sortering:</td>
+            <td><input id="Sortering" type="text" name="Sortering" /></td>
+        </tr>
+        <tr>
+            <td>/td>
+            <td><input id="Submit1" type="submit" value="Opret" /></td>
+        </tr>
+        
+    </table>
+@ViewBag.MSG
+
+    
+    
 </form> 
 @*hej med  dig*@
