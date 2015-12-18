@@ -17,10 +17,11 @@
                 @if (Model != null)
                 {
                     <form name="myForm" action="/Produkt/Produkter/" enctype="multipart/form-data" method="post">
-                        <select name="KatID">
-                            @foreach (var p in Model.Produkter)
+                        <select name="KatID" style="width: 207px">
+                            
+                            @foreach (var kat in Model.KategoriList)
                             {
-                                <option value="@p.ID">@p.Navn</option>
+                                <option value="@kat.ID">@kat.Navn</option>
                             }
                         </select>
                     </form>
@@ -28,57 +29,72 @@
             </td>
         </tr>
         <tr>
-            <td></td>
+
+            <td>
+                Maxpris:
+                <input id="MaxPris" type="text" style="width: 207px"/>
+            </td>
         </tr>
         <tr>
-            <td></td>
+
+            <td>
+                Søgeord:
+                <input id="SoegeOrd" type="text"style="width: 207px"/>
+            </td>
         </tr>
         <tr>
-            <td></td>
+            <td>
+                <input id="Submit1" type="submit" value="søg" />
+            </td>
         </tr>
     </table>
 </div>
 
 @foreach (var produkt in Model.Produkter)
 {
-    <div class="eight columns" style="border: 2px solid orange; height: 115px; margin-bottom: 35px; margin-right: 30px; float: right;">
+    <div class="eight columns" style="border: 1px solid gray; height: 155px; margin-bottom: 35px; margin-right: 35px; float: right;">
         <table>
             <tr>
-                <td style="padding-left: 15px">
-                    <img src="~/Content/Produkter/@produkt.Billede" style="width: 100px; height: 100px;" />
+                <td style="width: 100%; height: 35px; background-color: grey;" colspan="8">
+                    @produkt.Navn
                 </td>
-                <td style="padding-left: 25px;">
+            </tr>
+            <tr>
+                <td style="padding-left: 15px">
+                    <img src="~/Content/Produkter/@produkt.Billede" style="width: 100px; height: 100px; margin-top:10px"/>
+                </td>
+                <td style="padding-left: 15px;">
                     Varenummer:
-                    <br />
+                    <br/>
                     Pris:
-                    <br />
+                    <br/>
                     Leveringstid:
                 </td>
                 <td style="padding-left: 10px;">
                     @produkt.Varenummer
-                    <br />
+                    <br/>
                     @produkt.Pris
-                    <br />
+                    <br/>
                     @produkt.Leveringstid
                 </td>
                 <td style="padding-left: 10px;">
                     Producent
-                    <br />
+                    <br/>
                     Tilbud:
-                    <br />
+                    <br/>
                     Lager antal:
                 </td>
                 <td style="padding-left: 10px;">
                     @produkt.Producent
-                    <br />
+                    <br/>
                     @produkt.Tildbudspris
-                    <br />
+                    <br/>
                     @produkt.Lagerantal
                 </td>
                 <td style="padding-left: 80px;">
-                    <img src="~/Content/Produkter/info.png" style="height: 50px; width: 50px;" />
-                    <br />
-                    <a href="#">[Se mere]</a>
+                    <img src="~/Content/Produkter/info.png" style="height: 50px; width: 50px;"/>
+                    <br/>
+                    <a href="@produkt.ID">[Se mere]</a>
 
 
 
